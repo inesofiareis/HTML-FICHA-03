@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <form action="https://www.webucator.com/course-demos/htm101/process-form.cfm" method="POST">
+
+        <H1>Registration Form</H1>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" size="15"> <br>
+        </div>
+
+        <div>
+             <label for="pw">Password:</label>
+            <input type="password" name="pw" id="pw" size="15"> <br>
+        </div>
+
+        <div>
+            <input type="hidden" name="emailMe" id="emailMe" value="mimireis2002@gmail.com">
+        </div>
+
+        <label for="gender">Gender:</label>
+
+
+        <input type="radio" name="gender" id="genderm" value="m">
+        <label for="genderm">Male</label>
+    
+    
+        <input type="radio" name="gender" id="genderf" value="f">
+        <label for="genderf">Female</label>
+    
+
+    <div>
+        <label for="terms">Click to accept our terms:</label>
+        <input type="checkbox" name="terms" id="terms">
+    </div>
+
+    <div>
+        <label for id="refferal">Where did you hear about us?</label>
+        <select name="referral" id="referral">
+           <option value="0">--Please choose--</option>
+           <option value="wom">Word of Mouth</option>
+           <option value="other">Other</option>
+
+        <optgroup label="Search Engine"></optgroup>
+            <option value="Google">Google</option>
+            <option value="Yahoo">Yahoo!</option>
+            <option value="MSN">MSN</option>
+        </optgroup>
+
+        </select>
+    </div>
+
+    <label for id="comments">Comments:</label> <br>
+    <textarea name="comments" id="comments" cols="30" rows="5"> </textarea> <br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value= "Reset">
+
+    </form>
+
+</body>
+</html>
